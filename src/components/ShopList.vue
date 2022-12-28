@@ -1,7 +1,7 @@
 <template>
-    <div v-for="shop in getShops" :key="shop.id">
+    <div v-for="(shop, index) in getShops" :key="index">
         <div v-if="shop.id >=0">
-            <shop-card  :shop="shop" />
+            <shop-card :shop="shop" :index="index"/>
         </div>
     </div>
 </template>

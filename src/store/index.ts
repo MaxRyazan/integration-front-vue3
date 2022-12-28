@@ -5,7 +5,8 @@ import getters from '@/ts/getters'
 
 export default createStore({
   state: {
-    shops: [{} as Shop]
+    shops: [{} as Shop],
+    photosCount: 1
   },
   getters: getters,
   mutations: {
