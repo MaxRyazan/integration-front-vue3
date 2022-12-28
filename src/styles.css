@@ -12,17 +12,15 @@
   padding: 10px;
 }
 
+.star {
+  font-weight: bold;
+  color: darkgoldenrod;
+  cursor: pointer;
+}
+
 .slider_container {
   height: 100%;
   position: relative;
-}
-
-.border-green {
-  border: 1px solid green;
-}
-
-.border-red {
-  border: 1px solid red;
 }
 
 .slider_outer {
@@ -37,6 +35,23 @@
 
 .slider_img {
   height: 100%;
+}
+
+.slider_button {
+  border: 1px solid darkgoldenrod;
+  background-color: white;
+  border-radius: 6px;
+  padding: 6px;
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+.slider_button:hover {
+  background-color: darkgoldenrod;
+  color: white;
+  border: 0;
+}
+.slider_button:active {
+  box-shadow: 0 0 4px black;
 }
 
 /*# sourceMappingURL=styles.css.map */

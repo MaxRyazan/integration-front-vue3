@@ -2,17 +2,19 @@
     <div class="inline">
         <div class="description_container">
             <h2>{{ shop.shopTitle }}</h2>
-            <p>{{ shop.openTime.slice(0, 5) }} - {{ shop.closingTime }}</p>
-            <p>
+            <p>Время работы: {{ shop.openTime.slice(0, 5) }} - {{ shop.closingTime }}</p>
+            <p>Рейтинг:
+                <span class="star">
                 {{
                     shop.grade === 'JUST_BAD' ? '&#9733; &#9733;' :
                     shop.grade === 'NEUTRAL' ? '&#9733; &#9733; &#9733;' :
                     shop.grade === 'GOOD' ? '&#9733; &#9733; &#9733; &#9733;' :
                     shop.grade === 'VERY_GOOD' ? '&#9733; &#9733; &#9733; &#9733; &#9733;' : '&#9733;'
                 }}
+                </span>
             </p>
-            <p>{{ shop.location }}</p>
-            <button @click="nextPhoto(shop)">Листать фотографии</button>
+            <p>Адрес: {{ shop.location }}</p>
+            <button class="slider_button" @click="nextPhoto(shop)">Листать фотографии</button>
         </div>
         <div class="slider_container">
             <div class="slider_outer">
