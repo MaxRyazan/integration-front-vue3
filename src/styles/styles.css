@@ -1,7 +1,6 @@
 .inline {
   display: flex;
   position: relative;
-  min-height: 200px;
   margin-bottom: 25px;
 }
 

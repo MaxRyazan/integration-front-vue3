@@ -3,6 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import '@/styles.scss'
-
+import '@/styles/styles.scss'
 </script>
